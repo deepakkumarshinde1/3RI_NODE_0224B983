@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=title%></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <%- include('./header.ejs') %>
+      <section>
+        <% blogs.forEach((blog)=>{ %>
+        <section class="blog-area-view">
+          <section class="blog-area-view-text">
+            <h2 class="title"><%=blog.title%></h2>
+            <p class="desc"><%=blog.desc%></p>
+            <p class="author">- <%=blog.author%></p>
+          </section>
+          <img class="image-preview-view" src="<%=blog.image%>" alt="" />
+        </section>
+        <% }) %>
+      </section>
+    </main>
+  </body>
+</html>

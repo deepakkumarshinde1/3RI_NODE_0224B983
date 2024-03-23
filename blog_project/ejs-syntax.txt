@@ -1,0 +1,3 @@
+<%   %> --> javascript logic
+<%=variable%> --> print data
+ <%- include('./header.ejs') %> --> import a file 
