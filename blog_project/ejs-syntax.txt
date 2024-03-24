@@ -1,3 +1,12 @@
 <%   %> --> javascript logic
 <%=variable%> --> print data
  <%- include('./header.ejs') %> --> import a file 
+
+
+ mongodb command
+    read --> find()
+    read --> find({filter})
+    read --> find({filter},{projection})
+    read --> findOne()
+    read --> findOne({filter})
+    read --> findOne({filter},{projection})

@@ -5,6 +5,7 @@ const upload = multer();
 
 mainRoutes.get("/", MainController.homePage);
 mainRoutes.get("/login", MainController.makeLogin);
+
 mainRoutes.post(
   "/user-registration",
   upload.none(),
